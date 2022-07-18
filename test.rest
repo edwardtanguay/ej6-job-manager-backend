@@ -1,0 +1,18 @@
+@url = http://localhost:3045
+
+### TEST
+GET {{url}}
+
+### LOGIN
+POST {{url}}/login
+content-type: application/json
+
+{
+	"username": "richter",
+	"password": "edward123"
+}
+
+### MAINTAIN LOGIN
+POST {{url}}/maintain-login
+content-type: application/json
+authorization: Bearer
